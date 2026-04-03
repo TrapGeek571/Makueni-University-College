@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Makueni University College</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Decorative background -->
+    <div class="bg-blur bg-1" aria-hidden="true"></div>
+    <div class="bg-blur bg-2" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Makueni University College Home">
+          <img src="media_assets/logo.png" alt="Makueni University College Logo" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">Makueni University College</div>
+            <div class="brand-sub">Wote Town, Makueni County, Kenya</div>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <a href="#schools">Schools</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#location">Location</a>
+            <a href="#contact" class="btn btn-small">Contact</a>
+            <button id="themeToggle" class="btn btn-small btn-ghost" aria-label="Toggle Dark Mode">
+                <span id="themeIcon">🌙</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <div class="pill">Welcome to Makueni University College</div>
+
+            <h1 class="hero-title">
+              Learn, grow, and lead in a modern campus environment.
+            </h1>
+
+            <p class="hero-text">
+              Explore our schools and student clubs, and connect with us easily.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#schools">Explore Schools</a>
+              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+            </div>
+
+            <div class="hero-metrics" role="list">
+              <div class="metric" role="listitem">
+                <div class="metric-value">4</div>
+                <div class="metric-label">Schools</div>
+              </div>
+              <div class="metric" role="listitem">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Clubs</div>
+              </div>
+              <div class="metric" role="listitem">
+                <div class="metric-value">1</div>
+                <div class="metric-label">Campus Location</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <div>
+                  <div class="hero-card-title">Quick Contact</div>
+                  <div class="hero-card-sub">Reach us directly</div>
+                </div>
+                <div class="badge">Official</div>
+              </div>
+
+              <div class="quick-list">
+                <a class="quick-item" href="tel:+254704122140">
+                  <span class="qi-label">Phone</span>
+                  <span class="qi-value">+254 704 122 140</span>
+                </a>
+
+                <a class="quick-item" href="mailto:wotecampus@seku.ac.ke">
+                  <span class="qi-label">Email</span>
+                  <span class="qi-value">wotecampus@seku.ac.ke</span>
+                </a>
+
+                <div class="quick-item">
+                  <span class="qi-label">Address</span>
+                  <span class="qi-value">P.O Box 441-90300 Wote, Makueni</span>
+                </div>
+              </div>
+
+              <div class="hero-card-bottom">
+                <a class="btn btn-small" href="#location">View Location</a>
+                <a class="btn btn-small btn-ghost" href="#clubs">Student Life</a>
+              </div>
+            </div>
+
+            <div class="floating-card" aria-hidden="true">
+              <div class="floating-title"> Learn. Grow. Lead.</div>
+              <div class="floating-sub">Gain valuable skills and experiences</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schools -->
+      <section class="section" id="schools">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Schools</h2>
+            <p class="section-subtitle">
+              Academic units available at Makueni University College.
+            </p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">SB</div>
+              <h3 class="card-title">School of Business</h3>
+              <p class="card-text">
+                Build strong foundations in management, entrepreneurship, and finance.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">SE</div>
+              <h3 class="card-title">School of Education</h3>
+              <p class="card-text">
+                Develop professional teaching skills and educational leadership.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">SA</div>
+              <h3 class="card-title">School of Arts</h3>
+              <p class="card-text">
+                Explore creative and human-centered disciplines that shape society.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">PS</div>
+              <h3 class="card-title">School of Physical and Live Sciences</h3>
+              <p class="card-text">
+                Learn through inquiry and hands-on work across science-based fields.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admissions Section -->
+<section class="section section-alt" id="admissions">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Admissions</h2>
+      <p class="section-subtitle">Join our community of scholars and leaders.</p>
+    </div>
+    
+    <div class="admission-grid">
+      <div class="admission-content">
+        <h3 class="card-title">How to Apply</h3>
+        <p class="card-text">Applications are open for Government-sponsored (KUCCPS) and Self-sponsored students. Ensure you meet the minimum requirements for your chosen school.</p>
+        <ul class="admission-list">
+          <li><strong>Step 1:</strong> Select your preferred program from our Schools.</li>
+          <li><strong>Step 2:</strong> Download the application form or apply via the portal.</li>
+          <li><strong>Step 3:</strong> Attach certified copies of your academic certificates.</li>
+          <li><strong>Step 4:</strong> Submit to the Registrar (Academic Affairs).</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-small">Download Prospectus</a>
+          <a href="#" class="btn btn-small btn-ghost">Admission Portal</a>
+        </div>
+      </div>
+      
+      <div class="admission-requirements">
+        <div class="req-card">
+          <span class="req-title">Degree Programs</span>
+          <span class="req-desc">C+ (Plus) and above in KCSE</span>
+        </div>
+        <div class="req-card">
+          <span class="req-title">Diploma Programs</span>
+          <span class="req-desc">C- (Minus) and above in KCSE</span>
+        </div>
+        <div class="req-card">
+          <span class="req-title">Certificate Programs</span>
+          <span class="req-desc">D+ (Plus) and above in KCSE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery Section -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Campus Gallery</h2>
+      <p class="section-subtitle">A glimpse into life at Makueni University College.</p>
+    </div>
+    
+    <div class="gallery-grid">
+      <!-- Replace src with actual image URLs -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1523050335392-93851179ae22?auto=format&fit=crop&w=800&q=80" alt="Graduation Square">
+        <div class="gallery-overlay">Graduation Square</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756edd811?auto=format&fit=crop&w=800&q=80" alt="Main Library">
+        <div class="gallery-overlay">Main Library</div>
+      </div>
+      <div class="gallery-item tall">
+        <img src="https://images.unsplash.com/photo-1525921429624-479b6a29d84c?auto=format&fit=crop&w=800&q=80" alt="Lecture Halls">
+        <div class="gallery-overlay">Lecture Halls</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" alt="Student Center">
+        <div class="gallery-overlay">Student Center</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Clubs -->
+      <section class="section section-alt" id="clubs">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Student Clubs</h2>
+            <p class="section-subtitle">
+              Community, mentorship, faith, and student support.
+            </p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">PE</div>
+              <h3 class="card-title">Peer Educators Club</h3>
+              <p class="card-text">
+                Student-led support, awareness, and empowerment programs.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">MA</div>
+              <h3 class="card-title">Muslims Association</h3>
+              <p class="card-text">
+                Muslim Student Association of Makueni University College.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">CU</div>
+              <h3 class="card-title">Christian Union</h3>
+              <p class="card-text">
+                Fellowship and spiritual growth through student community activities.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location -->
+      <section class="section" id="location">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Location</h2>
+            <p class="section-subtitle">
+              Wote Town, Makueni County, Kenya.
+            </p>
+          </div>
+
+          <div class="location-grid">
+            <div class="panel">
+              <h3 class="panel-title">Campus Details</h3>
+              <div class="panel-list">
+                <div class="panel-item">
+                  <div class="panel-label">Town</div>
+                  <div class="panel-value">Wote</div>
+                </div>
+                <div class="panel-item">
+                  <div class="panel-label">County</div>
+                  <div class="panel-value">Makueni</div>
+                </div>
+                <div class="panel-item">
+                  <div class="panel-label">Country</div>
+                  <div class="panel-value">Kenya</div>
+                </div>
+              </div>
+
+              <div class="panel-actions">
+                <a
+                  class="btn btn-small"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.google.com/maps/search/?api=1&query=Wote%20Town%2C%20Makueni%20County%2C%20Kenya"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
+            </div>
+
+            <div class="map-wrap" aria-label="Map showing Wote Town, Makueni County, Kenya">
+              <iframe
+                title="Makueni University College location map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Wote%20Town%2C%20Makueni%20County%2C%20Kenya&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+              We are ready to help. Use any of the options below.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3 class="contact-title">Official Contacts</h3>
+
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-label">Address</div>
+                  <div class="contact-value">P.O Box 441-90300 Wote, Makueni</div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">
+                    <a href="tel:+254704122140">+254 704 122 140</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">
+                    <a href="mailto:wotecampus@seku.ac.ke">wotecampus@seku.ac.ke</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a class="btn btn-small" href="mailto:wotecampus@seku.ac.ke?subject=Inquiry%20-%20Makueni%20University%20College">
+                  Send Email
+                </a>
+                <a class="btn btn-small btn-ghost" href="tel:+254704122140">Call Now</a>
+              </div>
+            </div>
+
+            <form class="contact-form" action="https://formspree.io/f/mvzvbkjk" method="POST">
+              <h3 class="contact-title">Send a Message</h3>
+
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+
+              <label class="field">
+                <span>Message</span>
+                <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+              </label>
+
+              <button class="btn" type="submit">Submit</button>
+              <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+              <p class="form-help">
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="footer-brand">Makueni University College</div>
+          <div class="footer-sub">
+            Wote Town, Makueni County, Kenya
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#schools">Schools</a>
+          <a href="#clubs">Clubs</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="to-top" href="javascript:void(0)" id="backToTop" aria-label="Back to top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h2 id="modalTitle">School Details</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+  </body>
+</html>
