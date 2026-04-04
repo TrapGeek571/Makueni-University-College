@@ -1265,3 +1265,192 @@ body.light-mode .brand-logo {
   border: 1px solid #d1d5db;
   background: #ffffff;
 }
+
+/* --- Enhanced Footer Styling --- */
+.site-footer {
+  padding: 4rem 0 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-mission {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 30ch;
+}
+
+.footer-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: var(--text);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-nav a {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--primary);
+}
+
+/* Social Media Icons */
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.footer-credit {
+  margin-top: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Light Mode Adjustments */
+body.light-mode .site-footer {
+  background: #f3f4f6;
+}
+
+body.light-mode .social-icon {
+  background: #ffffff;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .footer-mission {
+    margin: 0 auto 1.5rem;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* --- Social Icon Styling --- */
+.social-icon {
+  width: 42px;           /* Slightly larger for icons */
+  height: 42px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;         /* Use flex to center the icon */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--muted);
+}
+
+/* Size of the actual SVG icon */
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  stroke: currentColor; /* Ensures the icon color matches the text color */
+  stroke-width: 2px;    /* Makes the icon lines look bold and clear */
+}
+
+.social-icon:hover {
+  background: var(--primary);
+  color: #ffffff;       /* Icon turns white on hover */
+  border-color: var(--primary);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+/* Light Mode Icon Visibility */
+body.light-mode .social-icon {
+  background: #ffffff;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+body.light-mode .social-icon:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.to-top-link {
+  cursor: pointer;
+  color: var(--primary) !important;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* WhatsApp Specific Hover Color */
+.whatsapp-hover:hover {
+  background: #25D366 !important; /* Official WhatsApp Green */
+  border-color: #25D366 !important;
+  color: white !important;
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3) !important;
+}
+
+/* Ensure the SVG inside matches the size of others */
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}

@@ -93,11 +93,26 @@
 const backToTopBtn = document.getElementById("backToTop");
 
 if (backToTopBtn) {
-    backToTopBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behaviour: "smooth"
-        });
+  backToTopBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth",
     });
+  });
 }
+
+document.querySelector(".footer-bottom p").innerHTML =
+  `&copy; ${new Date().getFullYear()} Makueni University College. All rights reserved.`;
+
+  // --- ULTIMATE BACK TO TOP FIX ---
+document.addEventListener('click', function(e) {
+  // This looks for ANY element with the class 'to-top' or 'to-top-link'
+  if (e.target.classList.contains('to-top') || e.target.closest('.to-top') || e.target.classList.contains('to-top-link')) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+});
