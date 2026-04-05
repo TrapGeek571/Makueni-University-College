@@ -116,3 +116,29 @@ document.addEventListener('click', function(e) {
     });
   }
 });
+
+// --- PROSPECTUS MODAL LOGIC ---
+const prospectusModal = document.getElementById('prospectusModal');
+const openProspectusBtn = document.getElementById('openProspectus'); // Ensure your button has this ID
+const closeProspectusBtn = document.getElementById('closeProspectus');
+
+if (openProspectusBtn && prospectusModal) {
+  openProspectusBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    prospectusModal.classList.add('is-active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling background
+  });
+
+  closeProspectusBtn.addEventListener('click', () => {
+    prospectusModal.classList.remove('is-active');
+    document.body.style.overflow = 'auto';
+  });
+
+  // Close if clicking outside the content
+  prospectusModal.addEventListener('click', (e) => {
+    if (e.target === prospectusModal) {
+      prospectusModal.classList.remove('is-active');
+      document.body.style.overflow = 'auto';
+    }
+  });
+}

@@ -24,7 +24,7 @@
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Makueni University College Home">
-          <img src="media_assets/logo.png" alt="Makueni University College Logo" class="brand-logo" />
+          <img src="media_assets/mucologo.png" alt="Makueni University College Logo" class="brand-logo" />
           <div class="brand-text">
             <div class="brand-name">Makueni University College</div>
             <div class="brand-sub">Wote Town, Makueni County, Kenya</div>
@@ -74,11 +74,11 @@
 
             <div class="hero-metrics" role="list">
               <div class="metric" role="listitem">
-                <div class="metric-value">4</div>
+                <div class="metric-value">5+</div>
                 <div class="metric-label">Schools</div>
               </div>
               <div class="metric" role="listitem">
-                <div class="metric-value">3</div>
+                <div class="metric-value">10+</div>
                 <div class="metric-label">Clubs</div>
               </div>
               <div class="metric" role="listitem">
@@ -122,7 +122,7 @@
             </div>
 
             <div class="floating-card" aria-hidden="true">
-              <div class="floating-title"> Learn. Grow. Lead.</div>
+              <div class="floating-title"> Inspire. Impact. Innovate.</div>
               <div class="floating-sub">Gain valuable skills and experiences</div>
             </div>
           </div>
@@ -194,7 +194,7 @@
           <li><strong>Step 4:</strong> Submit to the Registrar (Academic Affairs).</li>
         </ul>
         <div class="hero-actions">
-          <a href="#" class="btn btn-small">Download Prospectus</a>
+          <a href="#" class="btn btn-small" id="openProspectus">Download Prospectus</a>
           <a href="#" class="btn btn-small btn-ghost">Admission Portal</a>
         </div>
       </div>
@@ -241,11 +241,11 @@
       </div>
       <div class="gallery-item">
         <img src="media_assets/governorsPledge.png" alt="Governor Mutula's Pledge">
-        <div class="gallery-overlay">Governor Mutula Pledges to fast track full operationalization of MUKO</div>
+        <div class="gallery-overlay">Governor Mutula Pledges to fast track full operationalization of MUCO</div>
       </div>
       <div class="gallery-item">
         <img src="media_assets/governorsPledge2.png" alt="Governor Mutula">
-        <div class="gallery-overlay">Governor Mutula</div>
+        <div class="gallery-overlay">Governor Mutula at MUCO</div>
       </div>
     </div>
   </div>
@@ -411,6 +411,35 @@
         </div>
       </section>
     </main>
+
+    <!-- Prospectus Modal -->
+    <div id="prospectusModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-modal" id="closeProspectus">&times;</button>
+        <h2 class="modal-title">University Prospectus</h2>
+        <p class="modal-subtitle">View or download our official admission guides below.</p>
+    
+        <div class="prospectus-grid">
+          <!-- Page 1 -->
+          <div class="prospectus-card">
+            <img src="media_assets/prospectus1.png.jpeg" alt="Prospectus Page 1" class="prospectus-img">
+          <div class="prospectus-info">
+          <span>General Info, Admission steps and Fees</span>
+          <a href="media_assets/prospectus1.png.jpeg" download="MUC_Prospectus_Page1" class="btn btn-small">Download Page 1</a>
+        </div>
+        </div>
+
+          <!-- Page 2 -->
+          <div class="prospectus-card">
+            <img src="media_assets/prospectus2.png.jpeg" alt="Prospectus Page 2" class="prospectus-img">
+          <div class="prospectus-info">
+          <span>Schools and Programs at our Campus</span>
+          <a href="media_assets/prospectus2.png" download="MUC_Prospectus_Page2" class="btn btn-small">Download Page 2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer class="site-footer">
