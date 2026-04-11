@@ -1549,3 +1549,76 @@ body.light-mode .close-modal {
 @media (max-width: 768px) {
   .prospectus-grid { grid-template-columns: 1fr; }
 }
+
+/* --- 1. Force the Hero Container to stay Dark --- */
+.hero-main-container {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  /* Darker gradient to make white text pop */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), 
+                    url('media_assets/studentcenter.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- 2. Fix the Main Hero Text Visibility --- */
+/* We force these to be white even in Light Mode */
+.hero-main-container .hero-title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+  font-weight: 800;
+}
+
+.hero-main-container .hero-text {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* --- 3. The Glass Effect (For Cards and Metrics) --- */
+.glass-card, 
+.hero-main-container .metric {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(15px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(15px) saturate(160%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- 4. Light Mode "Anti-Override" --- */
+/* This stops the light-mode white background from touching the hero section */
+body.light-mode .hero-main-container .hero-card,
+body.light-mode .hero-main-container .metric,
+body.light-mode .hero-main-container .floating-card,
+body.light-mode .hero-main-container .quick-item {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Ensure Quick Contact text is white in Light Mode */
+body.light-mode .hero-main-container .qi-label,
+body.light-mode .hero-main-container .qi-value,
+body.light-mode .hero-main-container .hero-card-title,
+body.light-mode .hero-main-container .hero-card-sub,
+body.light-mode .hero-main-container .floating-title,
+body.light-mode .hero-main-container .floating-sub,
+body.light-mode .hero-main-container .metric-value,
+body.light-mode .hero-main-container .metric-label {
+  color: #ffffff !important;
+}
+
+/* --- 5. Fix Quick Items (Phone/Email boxes) --- */
+.hero-main-container .quick-item {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  transition: background 0.3s ease;
+}
+
+.hero-main-container .quick-item:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
